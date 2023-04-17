@@ -1,12 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/89126913780aef4c166a126736090567?family=SantanderHeadlineW05-Rg);
+@font-face {
+	font-family: SantanderDemo;
+	src: url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.eot"); 
+	src: url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.woff2") format("woff2"), 
+	url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.ttf") format("truetype"), 
+	url("//db.onlinewebfonts.com/t/89126913780aef4c166a126736090567.svg#SantanderHeadlineW05-Rg") format("svg"); 
+}
+
+body {
+  font-family: "SantanderDemo", Arial;
+  font-size: 14px;
+}
+
+.black { stop-color: black; stop-opacity: 0; }
+.darkolivegreen1 { stop-color: rgb(187,208,172); }
+.darkolivegreen2 { stop-color: darkolivegreen; }
+.crimson1 { stop-color: rgb(255,128,128); }
+.crimson2 { stop-color: rgb(255,128,128); stop-opacity: 0.7;}
+.crimson3 { stop-color: crimson; }
+			
 .bar.total rect {
-  fill: steelblue;
+  fill: url(#Gradient2);
+  stroke-width:1;
+  stroke:rgb(226,226,226);
 }
 
 .bar.positive rect {
-  fill: darkolivegreen;
+  fill: url(#Gradient0);
+  stroke-width:1;
+  stroke:rgb(226,226,226);
 }
 .bar.negative rect {
-  fill: crimson;
+  fill: url(#Gradient1);
+  stroke-width:1;
+  stroke:rgb(226,226,226);
 }
 
 .bar line.connector {
@@ -16,12 +45,12 @@
 
 .bar text {
   fill: white;
-  font: 12px sans-serif;
+  font: 12px "SantanderDemo";
   text-anchor: middle;
 }
 
 .axis text {
-  font: 10px sans-serif;
+  font: 12px "SantanderDemo";
 }
 
 .axis path,
